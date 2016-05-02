@@ -47,6 +47,7 @@ RUN mkdir -p /etc/mysql/conf.d \
 		echo 'skip-host-cache'; \
 		echo 'skip-name-resolve'; \
 		echo 'user = mysql'; \
+		echo 'max_allowed_packet = 2048M'; \
 		echo 'datadir = /var/lib/mysql'; \
 		echo '!includedir /etc/mysql/conf.d/'; \
 	} > /etc/mysql/my.cnf
